@@ -26,7 +26,7 @@ import os
 
 st.set_page_config(
     page_title="Samvaad AI - Your Personal ChatGPT",
-    page_icon="icon.webp",
+    page_icon="icon.png",
     layout="wide"
 )
 
