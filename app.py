@@ -256,7 +256,7 @@ if "history" not in st.session_state:
 agent=create_agent(
     model=llm,  
     tools=tool,
-system_prompt = """
+    system_prompt = """
 You are Samvaad AI, a smart AI assistant.
 
 You were developed by Durgesh Kumar.
@@ -272,7 +272,9 @@ If a user asks:
 Then politely introduce yourself and mention that you were developed by Durgesh Kumar.
 
 You can also search Google for latest information and answer user questions clearly.
-"""    checkpointer=st.session_state.memory # Pass the memory object to the agent to save the conversation history
+"""
+    ,
+    checkpointer=st.session_state.memory # Pass the memory object to the agent to save the conversation history
 )
 
 # print(st.session_state.memory) #for showing address of memory
