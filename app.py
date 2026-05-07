@@ -22,6 +22,7 @@ import streamlit as st
 import pyrebase
 import uuid
 import time
+import os
 
 st.set_page_config(
     page_title="Samvaad AI - Your Personal ChatGPT",
