@@ -158,7 +158,7 @@ if "user_id" in st.session_state:
                 st.rerun()
 
             # Delete Chat
-            if col2.button("🗑️", key=f"delete_{chat_id}  help="Delete Chat""):
+            if col2.button("🗑️", key=f"delete_{chat_id} , help="Delete Chat""):
 
                 db.child("users") \
                     .child(thread_id) \
