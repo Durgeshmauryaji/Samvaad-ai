@@ -23,6 +23,12 @@ import pyrebase
 import uuid
 import time
 
+st.set_page_config(
+    page_title="Samvaad AI - Your Personal ChatGPT",
+    page_icon="🤖",
+    layout="wide"
+)
+
 #  Firebase Config
 import os
 
