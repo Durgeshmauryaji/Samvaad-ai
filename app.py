@@ -26,7 +26,7 @@ import os
 
 st.set_page_config(
     page_title="Samvaad AI - Your Personal ChatGPT",
-    page_icon="icon.png",
+    page_icon="icon.webp",
     layout="wide"
 )
 
@@ -301,20 +301,27 @@ for message in st.session_state.history:
 
 query=st.chat_input("Ask me anything...")
 
-query=st.chat_input("Ask me anything...")
-
-# PASTE HERE 👇
+# ----- DEVELOPER PHOTO RESPONSE -----
 
 developer_keywords = [
-    ...
+    "who made you",
+    "who created you",
+    "who developed you",
+    "developer photo",
+    "creator photo",
+    "your developer photo",
+    "photo of developer"
 ]
 
-if query and any(...):
-    ...
-    st.stop()
+if query and any(word in query.lower() for word in developer_keywords):
 
-# EXISTING CODE 👇
-if query:
+    st.chat_message("assistant").markdown(
+        "I was developed by Durgesh Kumar 👨‍💻"
+    )
+
+    st.image("developer.jpeg", width=250)
+
+    st.stop()
 
 if query:
 
