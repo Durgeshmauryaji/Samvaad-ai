@@ -26,7 +26,7 @@ import os
 
 st.set_page_config(
     page_title="Samvaad AI - Your Personal ChatGPT",
-    page_icon="icon.webp",
+    page_icon="icon.png",
     layout="wide"
 )
 
@@ -300,6 +300,21 @@ for message in st.session_state.history:
     st.chat_message(role).markdown(content)
 
 query=st.chat_input("Ask me anything...")
+
+query=st.chat_input("Ask me anything...")
+
+# PASTE HERE 👇
+
+developer_keywords = [
+    ...
+]
+
+if query and any(...):
+    ...
+    st.stop()
+
+# EXISTING CODE 👇
+if query:
 
 if query:
 

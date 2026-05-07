@@ -10,11 +10,7 @@ It provides real-time AI responses with Google Search integration, streaming out
 
 ## 🚀 Live Demo
 
-🔗 Add your deployed app link here
-
-Example:
-
-https://samvaad-ai.streamlit.app
+🔗https://samvaad-ai.streamlit.app
 
 ---
 
