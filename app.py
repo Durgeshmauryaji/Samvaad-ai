@@ -228,7 +228,11 @@ if "chat_id" not in st.session_state or st.session_state.chat_id is None:
     create_new_chat()
 
 
-llm=ChatGroq(model="openai/gpt-oss-20b",streaming=True)
+llm = ChatGroq(
+    api_key=os.getenv("GROQ_API_KEY"),
+    model="openai/gpt-oss-20b",
+    streaming=True
+)
 
 search=GoogleSerperAPIWrapper() # Initialize the Google Search API Wrapper
 tool=[search.run] # Define the tools to be used by the agent
