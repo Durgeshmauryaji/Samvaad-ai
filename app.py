@@ -289,7 +289,7 @@ Use Google Search only for factual, latest, or real-time information questions.
 # Building Web Interface using Streamlit
 
 st.markdown(
-    "<h2 style='text-align:center; color:#4B0082;'>⚡Samvaad A - Answer at the speed of thought</h2>",
+    "<h2 style='text-align:center; color:#4B0082;'>⚡Samvaad AI - Answer at the speed of thought</h2>",
     unsafe_allow_html=True
 )
 st.image("icon.png", width=200)
